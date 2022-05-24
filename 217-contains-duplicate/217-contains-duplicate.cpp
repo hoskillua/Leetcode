@@ -1,7 +1,7 @@
 class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
-        map<int, int> Freq;
+        map<int, char> Freq;
         for (int x : nums) {
             if (Freq[x]++)
                 return true;
