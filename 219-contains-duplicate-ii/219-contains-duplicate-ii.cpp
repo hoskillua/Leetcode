@@ -6,9 +6,10 @@ public:
         int n = nums.size();
         for (int i = 0; i < n; i++) {
             int x = nums[i];
-            if(Freq[x].size())
-                Diff[x].push_back(i - Freq[x][Freq[x].size()-1]);
-            Freq[x].push_back(i);
+            vector<int>& f = Freq[x];
+            if(f.size())
+                Diff[x].push_back(i - f[f.size()-1]);
+            f.push_back(i);
         }
         for(auto x: Diff)
         {
