@@ -1,6 +1,6 @@
 class Solution {
 public:
-    vector<vector<int>> generate(int n) {
+    vector<vector<int>> generate(char n) {
         vector<vector<int>> P(n);
         P[0].push_back(1);
         for (char i = 1;  i < n; i++)
